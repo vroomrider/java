@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.java.practice.collections.map.MapLinkedHashMap&apos; to &apos;MapHashMap&apos;&#x0D;&#x0A;- Original project: &apos;Java7Practice&apos;&#x0D;&#x0A;- Original element: &apos;com.java.practice.collections.map.MapLinkedHashMap&apos;&#x0D;&#x0A;- Renamed element: &apos;com.java.practice.collections.map.MapHashMap&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MapLinkedHashMap&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.java.practice.collections.map{MapLinkedHashMap.java[MapLinkedHashMap" matchStrategy="1" name="MapHashMap" qualified="false" references="true" similarDeclarations="false" stamp="1563014611872" textual="false" version="1.0"/>
-</session>

@@ -1,3 +1,0 @@
-INDEX VERSION 1.130
-D:\Documents\workspace\Eclipse\HTC\HTC.LocalWorkspaceForTesting\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1851984173.index
-\intagramindia\src\main\java
