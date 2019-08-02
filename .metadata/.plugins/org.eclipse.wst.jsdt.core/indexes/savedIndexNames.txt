@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\Documents\workspace\Eclipse\HTC\HTC.LocalWorkspaceForTesting\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2244161478.index
+986759532.index
+2072298431.index
+1802545266.index
+3728724389.index
+634213485.index

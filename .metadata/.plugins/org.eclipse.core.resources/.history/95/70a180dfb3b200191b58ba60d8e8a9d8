@@ -1,0 +1,21 @@
+package com.java.practice.casting.model;
+
+public class Animal {
+
+	public void speak() {
+		printInConsole("Animal speaks.. ");
+	}
+
+	public void jump() {
+		printInConsole("All Animals cannot Jump");
+	}
+
+	/**
+	 * @Printing.Logs.In.Console
+	 * @param str
+	 */
+	public static void printInConsole(String str) {
+		System.out.println("SuperClass Object");
+		System.out.println(str);
+	}
+}

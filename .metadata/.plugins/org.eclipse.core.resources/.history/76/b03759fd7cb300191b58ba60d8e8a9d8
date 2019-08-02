@@ -1,0 +1,15 @@
+package com.java.practice.collections;
+
+/**
+ * @Singleton Object
+ * 
+ * @author pradeep_ramesh
+ */
+public class CollectionClass {
+
+	public static void main(String[] args) {
+
+		Collections collect = new Collections();
+	}
+
+}

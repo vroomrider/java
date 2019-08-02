@@ -1,0 +1,13 @@
+package com.java.practice.collections;
+
+import java.util.Collections;
+
+/**
+ * 
+ * @author pradeep_ramesh
+ *
+ */
+public class CollectionClass {
+
+	// Collections collect = new Collections();
+}

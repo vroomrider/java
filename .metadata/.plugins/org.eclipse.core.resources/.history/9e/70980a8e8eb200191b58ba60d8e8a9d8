@@ -1,0 +1,283 @@
+package com.java.practice.method.model;
+
+public class NewShop extends OldShop {
+
+	/**
+	 ********************************************************************************************************
+	 * C.O.N.S.T.R.U.C.T.O.R Methods
+	 ********************************************************************************************************
+	 */
+
+	/**
+	 * PRIVATE @Constructor
+	 * 
+	 * @Parameterized.Constructor
+	 * @param str
+	 */
+	private NewShop(String str) {
+		printInConsole("NewShop privateConstructor - " + str);
+	}
+
+	/**
+	 * DEFAULT @Constructor
+	 * 
+	 * @Parameterized.Constructor
+	 * @param str
+	 */
+	NewShop(double id) {
+		printInConsole("NewShop defaultConstructor");
+		// printInConsole("OldShop defaultConstructor");
+	}
+
+	/**
+	 * PROTECTED @Constructor
+	 * 
+	 * @Parameterized.Constructor
+	 * @param str
+	 */
+	protected NewShop(int id) {
+		printInConsole("NewShop protectedConstructor");
+		// printInConsole("OldShop privateConstructor");
+	}
+
+	/**
+	 * PUBLIC @Constructor
+	 */
+	public NewShop() {
+		printInConsole("NewShop publicConstructor");
+	}
+
+	public NewShop(Long id) {
+		printInConsole("NewShop publicConstructor-" + id);
+	}
+
+	/**
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * PRIVATE Methods
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * Executing N.O.N - S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 */
+	/**
+	 * PRIVATE @NonStatic.Method
+	 * 
+	 * @return
+	 * @throws Exception
+	 */
+	private void noStairCase(int id) throws Exception {
+		printInConsole("NewShop publicNoStairCase-" + id);
+	}
+
+	/**
+	 * DEFAULT @NonStatic.Method
+	 * 
+	 * @param int
+	 *            input
+	 * @return Long value
+	 * @throws Exception
+	 */
+	Long publicStairCase(int data) throws Exception {
+		printInConsole("NewShop publicLongPublicStairCase");
+		return 0L;
+	}
+
+	// /**
+	// * PROTECTED @NonStatic.Method
+	// *
+	// * @return
+	// */
+	// protected void publicStairCase() {
+	// // printInConsole("OldShop publicStairCase()");
+	// printInConsole("NewShop publicStairCase");
+	// defaultBathroom();
+	// }
+
+	// public static void items() {
+	// printInConsole("NewShop items()");
+	// }
+
+	// public void doors() {
+	// printInConsole("NewShop doors()");
+	// }
+
+	/**
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * PRIVATE Methods
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * Executing N.O.N - S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 */
+	private void privateBathroom() {
+		printInConsole("NewShop privateBathroom()");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 * Executing S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 * 
+	 */
+	private static void staticPrivateBathroom() {
+		printInConsole("NewShop StaticPrivateBathroom");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * DEFAULT Methods
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * Executing N.O.N - S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 */
+	void defaultBathroom() {
+		printInConsole("NewShop privateDefaultBathroom()");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 * Executing S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 * 
+	 */
+	static void staticDefaultBathroom() {
+		printInConsole("NewShop staticDefaultBathroom");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * PUBLIC Methods
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * Executing N.O.N - S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 */
+	/**
+	 * @NonStatic.Method
+	 * @return
+	 */
+	public void publicStairCase() {
+		// printInConsole("OldShop publicStairCase()");
+		printInConsole("NewShop publicStairCase()");
+		defaultBathroom();
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @param Integer
+	 *            input
+	 * @return
+	 */
+	// public void publicStairCase(Integer intVal) {
+	// printInConsole("OldShop publicStairCase()");
+	// }
+
+	/**
+	 * @NonStatic.Method
+	 * @param String
+	 *            input
+	 * @return String value
+	 */
+	public String stairCase(String data) {
+		printInConsole("String OverLoaded");
+		return data;
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @param Long
+	 *            input
+	 * @return String value
+	 */
+	public String stairCase(Long data) {
+		printInConsole("String OverLoaded");
+		return "";
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @param Integer
+	 *            input
+	 * @return Long value
+	 * @throws Exception
+	 */
+	public Long stairCase(Integer data) throws Exception {
+		printInConsole("String Integer OverLoaded");
+		return 0L;
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @param int
+	 *            input
+	 * @return Long value
+	 * @throws Exception
+	 */
+	public Long stairCase(int data) throws Exception {
+		printInConsole("String int OverLoaded");
+		return 0L;
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @return
+	 * @throws Exception
+	 */
+	public void noStairCase() throws Exception {
+		printInConsole("OldShop noStairCase()");
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @return
+	 * @param String
+	 *            input
+	 */
+	public void noStairCase(String reason) {
+		printInConsole("OldShop noStairCase(str) - MethodOverLoading");
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @return
+	 */
+	public void doors() {
+		printInConsole("OldShop doors()");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 * Executing S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 */
+
+	public static void items() {
+		printInConsole("OldShop items()");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * PROTECTED Methods
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * Executing N.O.N - S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 */
+	protected void protectedBathroom() {
+		printInConsole("OldShop privateBathroom()");
+	}
+
+	/**
+	 * @Printing.Logs.In.Console
+	 * @param str
+	 */
+	public static void printInConsole(String str) {
+		printInConsole("NewShop - " + str);
+	}
+}

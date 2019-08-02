@@ -1,0 +1,31 @@
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.tigo.com/UpdateAccountInfoResponse/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:hdr="http://xmlns.tigo.com/ResponseHeader/V3" xmlns:par="http://xmlns.tigo.com/ParameterType/V2" xmlns:ua2="http://xmlns.tigo.com/UpdateAccountInfoResponse/V1" xmlns:cor="http://xmlns.tigo.com/CoreData/V1">
+
+	<xsd:import namespace="http://xmlns.tigo.com/ResponseHeader/V3" schemaLocation="ResponseHeaderV3.xsd"/>
+	<xsd:import namespace="http://xmlns.tigo.com/ParameterType/V2" schemaLocation="ParameterTypeV2.xsd"/>
+	<xsd:import namespace="http://xmlns.tigo.com/CoreData/V1" schemaLocation="CoreData_1_0.xsd"/>
+
+	<xsd:element name="UpdateAccountInfoResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="hdr:ResponseHeader"/>
+				<xsd:element name="ResponseBody">
+					<xsd:complexType>
+						<xsd:complexContent>
+							<xsd:extension base="cor:responseBodyType">
+								<xsd:sequence>
+									<xsd:element name="additionalResults" minOccurs="0">
+										<xsd:complexType>
+											<xsd:sequence>
+												<xsd:element ref="par:ParameterType" maxOccurs="unbounded"/>
+											</xsd:sequence>
+										</xsd:complexType>
+									</xsd:element>
+								</xsd:sequence>
+							</xsd:extension>
+						</xsd:complexContent>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

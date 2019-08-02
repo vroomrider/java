@@ -1,0 +1,8 @@
+package com.java.practice.collections;
+
+import java.util.Collections;
+
+public class CollectionClass {
+
+	Collections collect = new Collections();
+}

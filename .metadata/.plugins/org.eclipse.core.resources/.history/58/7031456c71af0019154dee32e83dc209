@@ -1,0 +1,203 @@
+package com.java.practice.method.model;
+
+public class OldShop {
+
+	/**
+	 ********************************************************************************************************
+	 * Executing C.O.N.S.T.R.U.C.T.O.R Methods
+	 ********************************************************************************************************
+	 */
+	/**
+	 * @Constructor
+	 */
+	public OldShop() {
+		System.out.println("OldShop Constructor");
+	}
+
+	/**
+	 * @Parameterized.Constructor
+	 * @param str
+	 */
+	private OldShop(String str) {
+		printInConsole("OldShop private Constructor");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * PRIVATE Methods
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * Executing N.O.N - S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 */
+	private void privateBathroom() {
+		printInConsole("OldShop privateBathroom()");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 * Executing S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 * 
+	 */
+	private static void staticPrivateBathroom() {
+		System.out.println("OldShop StaticPrivateBathroom");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * DEFAULT Methods
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * Executing N.O.N - S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 */
+	private void defaultBathroom() {
+		printInConsole("OldShop defaultBathroom()");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 * Executing S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 * 
+	 */
+	private static void staticDefaultBathroom() {
+		System.out.println("OldShop staticDefaultBathroom");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * PUBLIC Methods
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * Executing N.O.N - S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 */
+	/**
+	 * @NonStatic.Method
+	 * @return
+	 */
+	public void publicStairCase() {
+		// printInConsole("OldShop publicStairCase()");
+
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @param Integer
+	 *            input
+	 * @return
+	 */
+	// public void publicStairCase(Integer intVal) {
+	// printInConsole("OldShop stairCase()");
+	// }
+
+	/**
+	 * @NonStatic.Method
+	 * @param String
+	 *            input
+	 * @return String value
+	 */
+	public String stairCase(String data) {
+		System.out.println("String OverLoaded");
+		return data;
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @param Long
+	 *            input
+	 * @return String value
+	 */
+	public String stairCase(Long data) {
+		System.out.println("String OverLoaded");
+		return "";
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @param Integer
+	 *            input
+	 * @return Long value
+	 * @throws Exception
+	 */
+	public Long stairCase(Integer data) throws Exception {
+		System.out.println("String Integer OverLoaded");
+		return 0L;
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @param int
+	 *            input
+	 * @return Long value
+	 * @throws Exception
+	 */
+	public Long stairCase(int data) throws Exception {
+		System.out.println("String int OverLoaded");
+		return 0L;
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @return
+	 * @throws Exception
+	 */
+	public void noStairCase() throws Exception {
+		printInConsole("OldShop noStairCase()");
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @return
+	 * @param String
+	 *            input
+	 */
+	public void noStairCase(String reason) {
+		printInConsole("OldShop noStairCase(str) - MethodOverLoading");
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @return
+	 */
+	public void doors() {
+		printInConsole("OldShop doors()");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 * Executing S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 */
+
+	public static void items() {
+		printInConsole("OldShop items()");
+	}
+
+	/**
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * PROTECTED Methods
+	 ********************************************************************************************************
+	 ********************************************************************************************************
+	 * Executing N.O.N - S.T.A.T.I.C Methods
+	 ********************************************************************************************************
+	 */
+	protected void protectedBathroom() {
+		printInConsole("OldShop privateBathroom()");
+	}
+
+	/**
+	 * @Printing.Logs.In.Console
+	 * @param str
+	 */
+	public static void printInConsole(String str) {
+		System.out.println("Inside OldShop");
+		System.out.println(str);
+	}
+}

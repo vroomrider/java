@@ -1,0 +1,14 @@
+package com.java.practice.collections;
+
+import java.util.*;
+
+/**
+ * @Singleton Object
+ * 
+ * @author pradeep_ramesh
+ */
+public class CollectionClass {
+
+	// Collections collect = new Collections();
+	Collections.sort(new ArrayList<>());
+}

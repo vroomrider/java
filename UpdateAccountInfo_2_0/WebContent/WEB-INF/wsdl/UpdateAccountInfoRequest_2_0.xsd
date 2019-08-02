@@ -1,0 +1,47 @@
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.tigo.com/UpdateAccountInfoRequest/V2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:hdr="http://xmlns.tigo.com/RequestHeader/V3" xmlns:par="http://xmlns.tigo.com/ParameterType/V2" xmlns:ua1="http://xmlns.tigo.com/UpdateAccountInfoRequest/V2" xmlns:cor="http://xmlns.tigo.com/CoreData/V1">
+	
+	<xsd:import namespace="http://xmlns.tigo.com/ParameterType/V2" schemaLocation="ParameterTypeV2.xsd"/>
+	<xsd:import namespace="http://xmlns.tigo.com/RequestHeader/V3" schemaLocation="RequestHeaderV3.xsd"/>
+	<xsd:import namespace="http://xmlns.tigo.com/CoreData/V1" schemaLocation="CoreData_1_0.xsd"/>
+
+	<xsd:element name="UpdateAccountInfoRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<!-- Datos de la cabecera -->
+				<xsd:element ref="hdr:RequestHeader"/>
+				<xsd:element name="requestBody">
+					<xsd:complexType>
+						<xsd:sequence>
+							<!-- Datos input del servicio -->
+							<xsd:element name="msisdn" type="cor:msisdnType"/>
+							<xsd:element name="accountName" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="code" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="address" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="title" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="custID" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="custName" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="firstName" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="lastName" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="dueDate" type="xsd:int" minOccurs="0"/>
+							<xsd:element name="billAddr1" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="emailBillAddr" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="smsBillAddr" type="cor:msisdnType" minOccurs="0"/>
+							<xsd:element name="ppsAcctCredit" type="xsd:nonNegativeInteger" minOccurs="0"/>
+							<xsd:element name="posAcctCredit" type="xsd:nonNegativeInteger" minOccurs="0"/>
+							<xsd:element name="ppsAcctInitBal" type="xsd:nonNegativeInteger" minOccurs="0"/>
+							<xsd:element name="posAcctInitBal" type="xsd:nonNegativeInteger" minOccurs="0"/>
+							<xsd:element name="reason" type="xsd:int" minOccurs="0"/>
+							<xsd:element name="additionalParameters" minOccurs="0">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element ref="par:ParameterType" maxOccurs="unbounded"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

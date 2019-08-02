@@ -1,0 +1,38 @@
+package com.java.practice.casting.model;
+
+/**
+ * 
+ * @author pradeep_ramesh
+ *
+ */
+public class LionSubClass extends AnimalSuperClass {
+
+	public LionSubClass() {
+		printInConsole("SUBCLASS.OBJECT");
+	}
+
+	public void speak() {
+		printInConsole("Roars");
+		// /**
+		// * @Inherited.function
+		// */
+		// public_jump();
+	}
+
+	public void hunt() {
+		System.out.println("Lions hunt other animals.. ");
+	}
+
+	public static void eat() {
+		printInConsole("Eats");
+	}
+
+	/**
+	 * @Printing.Logs.In.Console
+	 * @param str
+	 */
+	private static void printInConsole(String str) {
+		System.out.println("LION." + str);
+	}
+
+}

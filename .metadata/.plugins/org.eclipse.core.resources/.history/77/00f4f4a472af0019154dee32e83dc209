@@ -1,0 +1,59 @@
+package com.java.practice.method.model;
+
+public class NewShop extends OldShop {
+
+	/**
+	 * @Constructor
+	 */
+	public NewShop() {
+		System.out.println("NewShop Constructor");
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @return
+	 * @throws Exception
+	 */
+	public void noStairCase() throws Exception {
+		printInConsole("NewShop noStairCase()");
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @param int
+	 *            input
+	 * @return Long value
+	 * @throws Exception
+	 */
+	public Long publicStairCase(int data) throws Exception {
+		System.out.println("String int OverLoaded");
+		return 0L;
+	}
+
+	/**
+	 * @NonStatic.Method
+	 * @return
+	 */
+	public void publicStairCase() {
+		// printInConsole("OldShop publicStairCase()");
+		System.out.println();
+		defaultBathroom();
+	}
+
+	/**
+	 * @Printing.Logs.In.Console
+	 * @param str
+	 */
+	public static void printInConsole(String str) {
+		System.out.println("Inside NewShop*");
+		System.out.println(str);
+	}
+
+	// public static void items() {
+	// printInConsole("NewShop items()");
+	// }
+
+	// public void doors() {
+	// printInConsole("NewShop doors()");
+	// }
+}

@@ -1,0 +1,45 @@
+<wsdl:definitions name="UpdateAccountInfo" targetNamespace="http://xmlns.tigo.com/UpdateAccountInfo/V1" xmlns:ua2="http://xmlns.tigo.com/UpdateAccountInfoResponse/V1" xmlns:ua1="http://xmlns.tigo.com/UpdateAccountInfoRequest/V2" xmlns:uas="http://xmlns.tigo.com/UpdateAccountInfo/V1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:uaf="http://xmlns.tigo.com/UpdateAccountInfoFault/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<wsdl:types>
+		<xsd:schema>
+			<xsd:import namespace="http://xmlns.tigo.com/UpdateAccountInfoRequest/V2" schemaLocation="UpdateAccountInfoRequest_2_0.xsd"/>
+			<xsd:import namespace="http://xmlns.tigo.com/UpdateAccountInfoResponse/V1" schemaLocation="UpdateAccountInfoResponse_1_0.xsd"/>
+			<xsd:import namespace="http://xmlns.tigo.com/UpdateAccountInfoFault/V1" schemaLocation="UpdateAccountInfoFault_1_0.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="UpdateAccountInfo">
+		<wsdl:part name="UpdateAccountInfo" element="ua1:UpdateAccountInfoRequest"/>
+	</wsdl:message>
+	<wsdl:message name="UpdateAccountInfoResponse">
+		<wsdl:part name="UpdateAccountInfoResponse" element="ua2:UpdateAccountInfoResponse"/>
+	</wsdl:message>
+	<wsdl:message name="UpdateAccountInfoFault">
+		<wsdl:part name="UpdateAccountInfoFault" element="uaf:UpdateAccountInfoFault"/>
+	</wsdl:message>
+	<wsdl:portType name="UpdateAccountInfoPortType">
+		<wsdl:operation name="UpdateAccountInfo">
+			<wsdl:input message="uas:UpdateAccountInfo"/>
+			<wsdl:output message="uas:UpdateAccountInfoResponse"/>
+			<wsdl:fault name="UpdateAccountInfoFault" message="uas:UpdateAccountInfoFault"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="UpdateAccountInfoBinding" type="uas:UpdateAccountInfoPortType">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+		<wsdl:operation name="UpdateAccountInfo">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body use="literal" parts="UpdateAccountInfo"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" parts="UpdateAccountInfoResponse"/>
+			</wsdl:output>
+			<wsdl:fault name="UpdateAccountInfoFault">
+				<soap:fault name="UpdateAccountInfoFault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="UpdateAccountInfoService">
+		<wsdl:port name="UpdateAccountInfo" binding="uas:UpdateAccountInfoBinding">
+			<soap:address location="http://soahost1-test.telecel.net.py:8001/osb/services/UpdateAccountInfo_2_0"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

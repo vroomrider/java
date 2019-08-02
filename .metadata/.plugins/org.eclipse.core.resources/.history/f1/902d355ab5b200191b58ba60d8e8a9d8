@@ -1,0 +1,33 @@
+package com.java.practice.casting.model;
+
+/**
+ * 
+ * @author pradeep_ramesh
+ *
+ */
+public class DogSubClass extends AnimalSuperClass {
+
+	DogSubClass() {
+
+	}
+
+	public void speak() {
+		printInConsole("Dog barks..");
+	}
+
+	public void run() {
+		System.out.println("Dogs run fast.. ");
+	}
+
+	public static void eat() {
+		printInConsole("Eat..");
+	}
+
+	/**
+	 * @Printing.Logs.In.Console
+	 * @param str
+	 */
+	private static void printInConsole(String str) {
+		System.out.println(str);
+	}
+}

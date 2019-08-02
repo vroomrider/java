@@ -1,0 +1,1 @@
+// Scenario.1.ReturnType.ShouldBeSame    // public Long publicStairCase(int primitive_int) {    // printInConsole("public.Long.stairCase(int) throws Exception." +    // primitive_int);    // return 0L;    // }
